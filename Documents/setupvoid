@@ -1,0 +1,10 @@
+Setup battery (No unnecesarry charging) on Thinkpad:
+- install xi acpi_call-dkm
+- install tpacpi-bat
+
+Not sure anymore what this does:
+- /etc/elogind/logind.conf -> suspend setup
+
+For making sudo useable on colemak:
+ su
+ echo 'Defaults env_keep += "LANG LANGUAGE LINGUAS LC_* _XKB_CHARSET"' >> /etc/sudoers
