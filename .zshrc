@@ -169,3 +169,4 @@ fuzzy-xdg-open() {
 zle -N fuzzy-xdg-open
 bindkey '^o' fuzzy-xdg-open
 
+[[ -z $DISPLAY && $XDG_VTNR -le 6 ]] && ~/.config/desktopenvs/startup.sh
