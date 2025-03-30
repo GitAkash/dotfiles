@@ -170,3 +170,6 @@ zle -N fuzzy-xdg-open
 bindkey '^o' fuzzy-xdg-open
 
 [[ -z $DISPLAY && $XDG_VTNR -le 6 ]] && ~/.config/desktopenvs/startup.sh
+
+# Default editor setup
+export EDITOR=/usr/bin/vim
