@@ -17,7 +17,7 @@ plugins=(
 )
 
 # Enable case-insensitive completion (optional)
-# CASE_SENSITIVE="false"
+CASE_SENSITIVE="false"
 
 # Enable hyphen-insensitive completion (optional)
 # HYPHEN_INSENSITIVE="true"
