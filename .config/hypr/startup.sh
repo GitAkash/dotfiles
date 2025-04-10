@@ -17,5 +17,9 @@ if ! pgrep -x "wireplumber" > /dev/null; then
   exec wireplumber &
 fi
 
+if ! pgrep -x "udiskie" > /dev/null; then
+  exec udiskie --smart-tray &
+fi
+
 exec dbus-run-session Hyprland
 
