@@ -20,7 +20,7 @@ else
     # If it's a terminal emulator (e.g., /dev/pts/0), skip killing processes
     echo "Running inside a terminal emulator, not killing processes."
 fi
-
+clear
 # Display menu
 echo "Welcome to Desktop Environment Selector"
 echo "----------------------------------------"
