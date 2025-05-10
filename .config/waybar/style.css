@@ -36,7 +36,7 @@ window#waybar.solo {
   border-radius: 5px;
   padding-left: 8;
   padding-right: 8;
-  background-color: rgba(0,0,0,0.3);
+  /*background-color: rgba(0,0,0,0.3);*/
   font-size: 14px;
   font-weight: bold;
 }
