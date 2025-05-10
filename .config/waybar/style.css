@@ -33,10 +33,11 @@ window#waybar.solo {
 
 #window {
   margin: 2;
+  border-radius: 5px;
   padding-left: 8;
   padding-right: 8;
   background-color: rgba(0,0,0,0.3);
-  font-size:14px;
+  font-size: 14px;
   font-weight: bold;
 }
 
