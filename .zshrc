@@ -32,3 +32,5 @@ source "$HOME/.config/zsh/02-functions_fzf.zsh" # FZF-related functions and keyb
 source "$HOME/.config/zsh/03-startup.zsh"     # Startup-related configurations
 source "$HOME/.config/zsh/99-aliases.zsh"     # Aliases (always last)
 
+export LFS=/mnt/lfs
+
