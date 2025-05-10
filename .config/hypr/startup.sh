@@ -22,10 +22,5 @@ if ! pgrep -x "udiskie" > /dev/null; then
   exec udiskie --smart-tray &
 fi
 
-# Hyprland setup
-if ! pgrep -x "hyprpolkitagent" > /dev/null; then
-	exec /usr/libexec/hyprpolkitagent
-fi
-
 exec dbus-run-session Hyprland
 
