@@ -4,6 +4,10 @@ border-color=#151718
 width=300
 height=110
 default-timeout=5000
-[urgency=high]
-text-color=#CD3F45
+border-radius=5
 
+[urgency=critical]
+text-color=#bf616a
+border-color=#bf616a
+default-timeout=0
+anchor=top-center
