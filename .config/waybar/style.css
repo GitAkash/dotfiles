@@ -1,7 +1,8 @@
 /* === GLOBAL DEFAULTS === */
 * {
-    font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-family: FontAwesome, CaskaydiaCove NFM;
     font-size: 13px;
+    font-style: italic;
 }
 
 /* === WAYBAR WINDOW === */
