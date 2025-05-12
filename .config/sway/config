@@ -7,6 +7,8 @@
 #Run on startup
 exec mako
 exec dbus-update-activation-environment --all
+exec /home/akash/.config/hypr/wl-clip-persist --clipboard both
+exec pidof -x low_battery.sh || /home/akash/.config/sway/batterywarning.sh
 
 ### Variables
 #
@@ -30,7 +32,12 @@ default_floating_border pixel 2
 
 default_dim_inactive 0.3
 blur enable
-#font pango:monospace 0.001 
+
+
+### Colorscheme
+client.focused #DB7A24E6 #DB7A24E6 #DB7A24E6 #DB7A24E6
+
+
 
 ### Output configuration
 #
