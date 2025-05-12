@@ -13,6 +13,7 @@ exec pidof -x low_battery.sh || /home/akash/.config/sway/batterywarning.sh
 ### Variables
 #
 set $cursor_theme Adwaita
+seat seat0 xcursor_theme $cursor_theme 25
 # Logo key. Use Mod1 for Alt.
 set $mod Mod4
 # Home row direction keys, like vim
@@ -29,7 +30,6 @@ set $menu fuzzel
 #remove titlebar
 default_border pixel 2
 default_floating_border pixel 2
-
 default_dim_inactive 0.3
 blur enable
 
@@ -255,5 +255,8 @@ bindsym $mod+r mode "resize"
 bar {
     swaybar_command waybar
 }
+
+# Switch cursor to focussed tab
+mouse_warping container
 
 include /etc/sway/config.d/*
