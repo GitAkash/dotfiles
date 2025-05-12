@@ -9,6 +9,7 @@ exec mako
 exec dbus-update-activation-environment --all
 exec /home/akash/.config/hypr/wl-clip-persist --clipboard both
 exec pidof -x low_battery.sh || /home/akash/.config/sway/batterywarning.sh
+exec nm-applet & blueman-applet
 
 ### Variables
 #
