@@ -12,7 +12,7 @@ Album Collections=,Category,Friends,Holidays,Miscellaneous,Nature,Party,Todo,Tra
 Album Monitoring=false
 Album Sort Role=0
 All Groups Open=false
-Default Icon Size=100
+Default Icon Size=120
 Default Tree Face Size=48
 Default Tree Icon Size=22
 Icon Show Aspect Ratio=false
@@ -89,10 +89,10 @@ TreeView Font=Sans Serif,9,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 Update Type=0
 
 [AlbumFolderView Sidebar]
-CurrentIndex=30
+CurrentIndex=17
 Expansion=0,1,8,9,10,11,12,13,14,15,16,17,18,19,20,22,21,23,24,25,26,27,28,29,30,32,31,33,34,36,35,37,38,39,40,41,43,42,44,45,46,3,4,5,6,7,50,51,52,53,54,-2
 RestoreChecked=false
-Selection=30
+Selection=17
 SortColumn=0
 SortOrder=0
 
@@ -110,9 +110,8 @@ CaseSensitive=0
 
 [Batch Queue Manager Settings]
 BqmBottomSplitter=AAAA/wAAAAEAAAACAAABegAAAQoB/////wEAAAABAA==
-BqmTopSplitter=AAAA/wAAAAEAAAADAAABCgAAAQQAAACXAf////8BAAAAAQA=
+BqmTopSplitter=AAAA/wAAAAEAAAADAAABCgAAAQQAAAC8Af////8BAAAAAQA=
 BqmVerticalSplitter=AAAA/wAAAAEAAAACAAAA/gAAAY4B/////wEAAAACAA==
-ToolBarsMovable=Disabled
 
 [Box Export Dialog]
 2 screens: Window-Maximized=true
@@ -975,7 +974,7 @@ tagPaths=1
 
 [Database Settings]
 Database Connectoptions=
-Database Encrypted Password=AwKtra0=
+Database Encrypted Password=AwI2NjY=
 Database Hostname=
 Database Name=/home/akash/Pictures/Digikam/
 Database Name Face=/home/akash/Pictures/Digikam/
@@ -1207,7 +1206,7 @@ TagComboBox-Checked=
 TagComboBox-CurrentIndex=4
 TagComboBox-Expansion=
 TagComboBox-RestoreChecked=true
-TagComboBox-Selection=27,4
+TagComboBox-Selection=4
 TagComboBox-SortColumn=0
 TagComboBox-SortOrder=0
 Use Full CPU=false
@@ -1247,10 +1246,10 @@ Last search album tag relation=0
 Last search results restriction=0
 Lower bound for minimum similarity=40
 TagComboBox-Checked=
-TagComboBox-CurrentIndex=27
+TagComboBox-CurrentIndex=4
 TagComboBox-Expansion=
 TagComboBox-RestoreChecked=true
-TagComboBox-Selection=27
+TagComboBox-Selection=4
 TagComboBox-SortColumn=0
 TagComboBox-SortOrder=0
 UseWholeAlbumsEntry=false
@@ -1293,7 +1292,7 @@ Selection=
 Sort Order=0
 SortColumn=0
 SortOrder=0
-SplitterState=AAAA/wAAAAEAAAACAAABmAAAAOIB/////wEAAAACAA==
+SplitterState=AAAA/wAAAAEAAAACAAABoQAAAOIB/////wEAAAACAA==
 
 [GPS Search Sidebar][GPSSearch Map Widget]
 Backend=marble
@@ -1487,7 +1486,7 @@ ShowImageSettingsDialog=true
 SixteenBitsImage=true
 SplitterState=AAAA/wAAAAEAAAACAAAHWAAAAX0B/////wAAAAABAQ==
 TIFFCompression=false
-ThumbbarState=AAAA/wAAAAD9AAAAAQAAAAAAAAEAAAAB3vwCAAAAAfsAAAAeAGUAZABpAHQAbwByAF8AdABoAHUAbQBiAGIAYQByAAAAAAAAAAHeAAAAVwD///8AAAOYAAAEHQAAAAQAAAAEAAAACAAAAAj8AAAAAA==
+ThumbbarState=AAAA/wAAAAD9AAAAAQAAAAAAAAEAAAAB3vwCAAAAAfsAAAAeAGUAZABpAHQAbwByAF8AdABoAHUAbQBiAGIAYQByAAAAAAAAAAHeAAAAXAEAAAcAAAOYAAAEHQAAAAQAAAAEAAAACAAAAAj8AAAAAA==
 ToolBarsMovable=Disabled
 Unclip Color=0
 UnderExposureColor=255,255,255
@@ -1662,7 +1661,7 @@ CaseSensitive=0
 CaseSensitive=0
 
 [ItemIconViewTagFilterView]
-CurrentIndex=
+CurrentIndex=35
 Expansion=
 RestoreChecked=false
 Selection=
@@ -1714,7 +1713,7 @@ FullScreen Hide ToolBars=false
 Horizontal Splitter State=AAAA/wAAAAEAAAADAAABfQAAAGkAAAF9Af////8AAAAAAQE=
 Navigate By Pair=true
 Show Thumbbar=true
-ThumbbarState=AAAA/wAAAAD9AAAAAQAAAAIAAAc8AAAAwPwBAAAAAfsAAAAmAGwAaQBnAGgAdAB0AGEAYgBsAGUAXwB0AGgAdQBtAGIAYgBhAHIAAAAAAAAABzwAAABXAP///wAABzwAAAQdAAAABAAAAAQAAAAIAAAACPwAAAAA
+ThumbbarState=AAAA/wAAAAD9AAAAAQAAAAIAAAc8AAAAwPwBAAAAAfsAAAAmAGwAaQBnAGgAdAB0AGEAYgBsAGUAXwB0AGgAdQBtAGIAYgBhAHIAAAAAAAAABzwAAABcAQAABwAABzwAAAQdAAAABAAAAAQAAAAIAAAACPwAAAAA
 ToolBarsMovable=Disabled
 
 [LightTable Settings][Left Sidebar]
@@ -1725,7 +1724,7 @@ ItemProperties Expanded=true
 LocationProperties Expanded=true
 Minimized=true
 PhotographProperties Expanded=true
-RestoreSize=31
+RestoreSize=33
 RightsProperties Expanded=true
 TagsProperties Expanded=true
 VideoProperties Expanded=true
@@ -1807,7 +1806,7 @@ ItemProperties Expanded=true
 LocationProperties Expanded=true
 Minimized=true
 PhotographProperties Expanded=true
-RestoreSize=30
+RestoreSize=32
 RightsProperties Expanded=true
 TagsProperties Expanded=true
 VideoProperties Expanded=true
@@ -1882,9 +1881,9 @@ Version Properties Tab=versions
 Version Properties View Mode=2
 
 [MainWindow]
-InitialAlbumID=30
-SplitterState=AAAA/wAAAAEAAAADAAABFAAABJAAAAGSAf////8AAAAAAQE=
-ThumbbarState=AAAA/wAAAAD9AAAAAQAAAAIAAASKAAAAifwBAAAAAfsAAAAmAG0AYQBpAG4AdwBpAG4AZABvAHcAXwB0AGgAdQBtAGIAYgBhAHIAAAAAAAAABIoAAABXAP///wAABIoAAAO1AAAABAAAAAQAAAAIAAAACPwAAAAA
+InitialAlbumID=17
+SplitterState=AAAA/wAAAAEAAAADAAABMgAABJAAAAGSAf////8AAAAAAQE=
+ThumbbarState=AAAA/wAAAAD9AAAAAQAAAAIAAAK1AAAAjvwBAAAAAfsAAAAmAG0AYQBpAG4AdwBpAG4AZABvAHcAXwB0AGgAdQBtAGIAYgBhAHIAAAAAAAAAArUAAABcAQAABwAAArUAAARDAAAABAAAAAQAAAAIAAAACPwAAAAA
 
 [MaintenanceDlg Settings]
 1920x1200 screen: Window-Maximized=true
@@ -2144,6 +2143,9 @@ IgnoredWords=digiKam,Showfoto,Apple,Nikon,Android,Canon,Sony,Samsung,Panasonic,O
 TranslatorEngine=0
 TranslatorLang=de-DE,en-US,es-ES,fr-FR,it-IT,pt-PT
 
+[TagEditDlgTitleEdit Search Text Tool]
+CaseSensitive=0
+
 [TagFilter Sidebar]
 FaceTagsFilter Expanded=false
 LabelsFilter Expanded=true
@@ -2151,7 +2153,7 @@ Matching Condition=0
 Search Text Filter Fields=127
 Show Untagged=false
 Show Without Face=false
-TagsFilter Expanded=false
+TagsFilter Expanded=true
 TextFilter Expanded=true
 TypeGeolocationFilter Expanded=true
 TypeMimeFilter Expanded=true

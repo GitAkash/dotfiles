@@ -1,5 +1,10 @@
 #!/bin/sh
 
+# Load sway environment variables
+if [ -f "$HOME/.config/sway/env" ]; then
+  . "$HOME/.config/sway/env"
+fi
+
 # Check if pipewire is running
 if ! pgrep -x "pipewire" > /dev/null; then
   exec pipewire &
