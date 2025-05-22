@@ -18,7 +18,7 @@ export FZF_ALT_C_OPTS="
 
 fuzzy-xdg-open() {
   local output
-  output=$(fzf --height 40% --reverse </dev/tty) 2>/dev/null
+  output=$(fzf --height 40% --preview 'bat -n --color=always {}' --reverse </dev/tty) 2>/dev/null
 
   [[ -z "$output" ]] && zle reset-prompt && return
 

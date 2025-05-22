@@ -27,10 +27,7 @@ source "$ZSH/oh-my-zsh.sh"
 
 # Explicitly source modular config files in correct order
 source "$HOME/.config/zsh/00-env.zsh"         # Environment variables and global settings
-source "$HOME/.config/zsh/01-trash.zsh"       # Trash management functions
+#source "$HOME/.config/zsh/01-trash.zsh"       # Trash management functions
 source "$HOME/.config/zsh/02-functions_fzf.zsh" # FZF-related functions and keybindings
 source "$HOME/.config/zsh/03-startup.zsh"     # Startup-related configurations
 source "$HOME/.config/zsh/99-aliases.zsh"     # Aliases (always last)
-
-export LFS=/mnt/lfs
-

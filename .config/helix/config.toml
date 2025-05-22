@@ -87,3 +87,7 @@ e = "extend_line_down"
 # gk (up) => gu (no_op)
 k = "no_op"
 u = "extend_line_up"
+
+
+[editor.soft-wrap]
+enable = true
