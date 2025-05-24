@@ -1,0 +1,14 @@
+Setup battery (No unnecesarry charging) on Thinkpad:
+- install xi acpi_call-dkm
+- install tpacpi-bat
+
+Not sure anymore what this does:
+- /etc/elogind/logind.conf -> suspend setup
+
+For making sudo useable on colemak: (DID THIS REALLY DO SOMETHING?)
+ su
+ echo 'Defaults env_keep += "LANG LANGUAGE LINGUAS LC_* _XKB_CHARSET"' >> /etc/sudoers
+
+ Upgrade firmware using fwupd, read about it @aw when really needed. I update my thinkpad with it.
+ 
+ /etc/udev/hwdb.d/60-keyboard.hwdb  << removed the zoom option here to remove the stupid error showing up
