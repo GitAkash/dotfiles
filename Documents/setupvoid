@@ -5,6 +5,9 @@ Setup battery (No unnecesarry charging) on Thinkpad:
 Not sure anymore what this does:
 - /etc/elogind/logind.conf -> suspend setup
 
-For making sudo useable on colemak:
+For making sudo useable on colemak: (DID THIS REALLY DO SOMETHING?)
  su
  echo 'Defaults env_keep += "LANG LANGUAGE LINGUAS LC_* _XKB_CHARSET"' >> /etc/sudoers
+
+ Upgrade firmware using fwupd, read about it @aw when really needed. I update my thinkpad with it.
+ 

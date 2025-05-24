@@ -9,7 +9,7 @@ if [[ "$current_tty" =~ ^/dev/tty[0-9]+$ ]]; then
   # Try graceful termination
   pkill -t "$(basename $current_tty)" -15 -f 'sway|hyprland|waybar|rofi|nm-applet|blueman-applet|pipewire|pulseaudio'
 
-  sleep 3
+  #sleep 3
 
   # Force kill if still running
   pkill -t "$(basename $current_tty)" -9 -f 'sway|hyprland|waybar|rofi|nm-applet|blueman-applet|pipewire|pulseaudio'
