@@ -1,3 +1,4 @@
 export QT_QPA_PLATFORMTHEME=qt5ct
 export QT_STYLE_OVERRIDE=kvantum
 export KDE_COLOR_SCHEME=swaydark
+export LANG=nl_NL.UTF-8

@@ -12,3 +12,4 @@ For making sudo useable on colemak: (DID THIS REALLY DO SOMETHING?)
  Upgrade firmware using fwupd, read about it @aw when really needed. I update my thinkpad with it.
  
  /etc/udev/hwdb.d/60-keyboard.hwdb  << removed the zoom option here to remove the stupid error showing up
+then run: "udevadm hwdb --update && udevadm control --reload-rules && udevadm trigger" 

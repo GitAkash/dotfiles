@@ -89,10 +89,10 @@ TreeView Font=Sans Serif,9,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 Update Type=0
 
 [AlbumFolderView Sidebar]
-CurrentIndex=17
-Expansion=0,1,8,9,10,11,12,13,14,15,16,17,18,19,20,22,21,23,24,25,26,27,28,29,30,32,31,33,34,36,35,37,38,39,40,41,43,42,44,45,46,3,4,5,6,7,50,51,52,53,54,-2
+CurrentIndex=57
+Expansion=0,1,8,9,10,11,12,13,14,15,16,17,18,19,20,22,21,23,24,25,26,27,28,29,30,32,31,33,34,36,35,37,38,39,40,41,43,42,44,45,46,3,4,5,6,7,50,51,52,53,54,55,58,60,61,62,63,56,57,-2
 RestoreChecked=false
-Selection=17
+Selection=57
 SortColumn=0
 SortOrder=0
 
@@ -110,7 +110,7 @@ CaseSensitive=0
 
 [Batch Queue Manager Settings]
 BqmBottomSplitter=AAAA/wAAAAEAAAACAAABegAAAQoB/////wEAAAABAA==
-BqmTopSplitter=AAAA/wAAAAEAAAADAAABCgAAAQQAAAC8Af////8BAAAAAQA=
+BqmTopSplitter=AAAA/wAAAAEAAAADAAABCgAAAQQAAAEaAf////8BAAAAAQA=
 BqmVerticalSplitter=AAAA/wAAAAEAAAACAAAA/gAAAY4B/////wEAAAACAA==
 
 [Box Export Dialog]
@@ -155,7 +155,6 @@ ScriptingBox Expanded=false
 ShowLog=false
 SplitterState=AAAA/wAAAAEAAAACAAAFrQAAAaoB/////wAAAAABAQ==
 Template=1
-ToolBarsMovable=Disabled
 TurnHighQualityThumbs=false
 UseDefaultTargetAlbum=false
 UseFileMetadata=false
@@ -974,7 +973,7 @@ tagPaths=1
 
 [Database Settings]
 Database Connectoptions=
-Database Encrypted Password=AwI2NjY=
+Database Encrypted Password=AwJYWFg=
 Database Hostname=
 Database Name=/home/akash/Pictures/Digikam/
 Database Name Face=/home/akash/Pictures/Digikam/
@@ -992,9 +991,9 @@ Internal Database Server Mysql Upgrade Command=
 Internal Database Server Path=
 
 [DateFolderView Sidebar]
-CurrentIndex=2
+CurrentIndex=6
 Expansion=1
-Selection=2
+Selection=6
 SortColumn=0
 SortOrder=0
 
@@ -1007,14 +1006,14 @@ Minimized=false
 RestoreSize=-1
 
 [Digikam Right Sidebar]
-ActiveTab=6
+ActiveTab=0
 DigikamProperties Expanded=true
 FileProperties Expanded=true
 ItemProperties Expanded=true
 LocationProperties Expanded=true
-Minimized=false
+Minimized=true
 PhotographProperties Expanded=true
-RestoreSize=-1
+RestoreSize=210
 RightsProperties Expanded=true
 TagsProperties Expanded=true
 VideoProperties Expanded=true
@@ -1206,7 +1205,7 @@ TagComboBox-Checked=
 TagComboBox-CurrentIndex=4
 TagComboBox-Expansion=
 TagComboBox-RestoreChecked=true
-TagComboBox-Selection=4
+TagComboBox-Selection=35
 TagComboBox-SortColumn=0
 TagComboBox-SortOrder=0
 Use Full CPU=false
@@ -1246,10 +1245,10 @@ Last search album tag relation=0
 Last search results restriction=0
 Lower bound for minimum similarity=40
 TagComboBox-Checked=
-TagComboBox-CurrentIndex=4
+TagComboBox-CurrentIndex=35
 TagComboBox-Expansion=
 TagComboBox-RestoreChecked=true
-TagComboBox-Selection=4
+TagComboBox-Selection=35
 TagComboBox-SortColumn=0
 TagComboBox-SortOrder=0
 UseWholeAlbumsEntry=false
@@ -1292,7 +1291,7 @@ Selection=
 Sort Order=0
 SortColumn=0
 SortOrder=0
-SplitterState=AAAA/wAAAAEAAAACAAABoQAAAOIB/////wEAAAACAA==
+SplitterState=AAAA/wAAAAEAAAACAAABqQAAAOIB/////wEAAAACAA==
 
 [GPS Search Sidebar][GPSSearch Map Widget]
 Backend=marble
@@ -1468,6 +1467,7 @@ JPEGCompression=75
 JPEGSubSampling=1
 JXLCompression=100
 JXLLossLess=true
+LastSavedImageExtension=png
 Median Filter Passes=0
 Noise Reduction Threshold=0
 Noise Reduction Type=0
@@ -1477,17 +1477,16 @@ OverExposureIndicator=false
 OverExposurePercentsEntry=1
 PGFCompression=3
 PGFLossLess=true
-PNGCompression=9
+PNGCompression=2
 PreviewMode=128
 RawImportToolIid=org.kde.digikam.plugin.rawimport.DarkTable
 RestoreToolSettings=true
 Show Thumbbar=false
 ShowImageSettingsDialog=true
 SixteenBitsImage=true
-SplitterState=AAAA/wAAAAEAAAACAAAHWAAAAX0B/////wAAAAABAQ==
+SplitterState=AAAA/wAAAAEAAAACAAAHWAAAAZAB/////wAAAAABAQ==
 TIFFCompression=false
-ThumbbarState=AAAA/wAAAAD9AAAAAQAAAAAAAAEAAAAB3vwCAAAAAfsAAAAeAGUAZABpAHQAbwByAF8AdABoAHUAbQBiAGIAYQByAAAAAAAAAAHeAAAAXAEAAAcAAAOYAAAEHQAAAAQAAAAEAAAACAAAAAj8AAAAAA==
-ToolBarsMovable=Disabled
+ThumbbarState=AAAA/wAAAAD9AAAAAQAAAAAAAAEAAAAB3vwCAAAAAfsAAAAeAGUAZABpAHQAbwByAF8AdABoAHUAbQBiAGIAYQByAAAAAAAAAAHeAAAAdAD///8AAAOHAAAEFwAAAAQAAAAEAAAACAAAAAj8AAAAAA==
 Unclip Color=0
 UnderExposureColor=255,255,255
 UnderExposureIndicator=false
@@ -1587,6 +1586,7 @@ Version Properties Tab=versions
 Version Properties View Mode=2
 
 [Import Filters]
+CurrentFilter=0
 Filter0=All Files|false|||
 Filter1=Only New Files|true|||
 Filter2=Raw Files|false|||image/x-nikon-nef;image/x-fuji-raf;image/x-adobe-dng;image/x-panasonic-raw;image/x-olympus-orf;image/x-kodak-dcr;image/x-kodak-k25;image/x-sony-arw;image/x-minolta-mrw;image/x-kodak-kdc;image/x-sigma-x3f;image/x-sony-srf;image/x-pentax-pef;image/x-panasonic-raw2;image/x-canon-crw;image/x-sony-sr2;image/x-canon-cr2
@@ -1596,8 +1596,8 @@ IgnoreExtensions=dsp dps
 IgnoreNames=mgr_data pgr_mgr
 
 [Import MainWindow]
-SplitterState=AAAA/wAAAAEAAAABAAABfwH/////AAAAAAEB
-ThumbbarState=AAAA/wAAAAD9AAAAAQAAAAIAAAXaAAAAwPwBAAAAAfsAAAAeAGkAbQBwAG8AcgB0AF8AdABoAHUAbQBiAGIAYQByAAAAAAAAAAXaAAAAaQD///8AAAHtAAAEHQAAAAQAAAAEAAAACAAAAAj8AAAAAA==
+SplitterState=AAAA/wAAAAEAAAABAAABjQH/////AAAAAAEB
+ThumbbarState=AAAA/wAAAAD9AAAAAQAAAAIAAAXaAAAAwPwBAAAAAfsAAAAeAGkAbQBwAG8AcgB0AF8AdABoAHUAbQBiAGIAYQByAAAAAAAAAAXaAAAAdAD///8AAAHZAAAEFwAAAAQAAAAEAAAACAAAAAj8AAAAAA==
 
 [Import Settings]
 Default Icon Size=142
@@ -1664,7 +1664,7 @@ CaseSensitive=0
 CurrentIndex=35
 Expansion=
 RestoreChecked=false
-Selection=
+Selection=35
 SortColumn=0
 SortOrder=0
 Toggle Auto Tags=0
@@ -1710,11 +1710,10 @@ Clear On Close=false
 FullScreen Hide SideBars=false
 FullScreen Hide StatusBar=false
 FullScreen Hide ToolBars=false
-Horizontal Splitter State=AAAA/wAAAAEAAAADAAABfQAAAGkAAAF9Af////8AAAAAAQE=
+Horizontal Splitter State=AAAA/wAAAAEAAAADAAABkAAAAHQAAAGQAf////8AAAAAAQE=
 Navigate By Pair=true
 Show Thumbbar=true
-ThumbbarState=AAAA/wAAAAD9AAAAAQAAAAIAAAc8AAAAwPwBAAAAAfsAAAAmAGwAaQBnAGgAdAB0AGEAYgBsAGUAXwB0AGgAdQBtAGIAYgBhAHIAAAAAAAAABzwAAABcAQAABwAABzwAAAQdAAAABAAAAAQAAAAIAAAACPwAAAAA
-ToolBarsMovable=Disabled
+ThumbbarState=AAAA/wAAAAD9AAAAAQAAAAIAAANSAAAAwPwBAAAAAfsAAAAmAGwAaQBnAGgAdAB0AGEAYgBsAGUAXwB0AGgAdQBtAGIAYgBhAHIAAAAAAAAAA1IAAAB0AP///wAAA1IAAAQXAAAABAAAAAQAAAAIAAAACPwAAAAA
 
 [LightTable Settings][Left Sidebar]
 ActiveTab=2
@@ -1724,7 +1723,7 @@ ItemProperties Expanded=true
 LocationProperties Expanded=true
 Minimized=true
 PhotographProperties Expanded=true
-RestoreSize=33
+RestoreSize=31
 RightsProperties Expanded=true
 TagsProperties Expanded=true
 VideoProperties Expanded=true
@@ -1806,7 +1805,7 @@ ItemProperties Expanded=true
 LocationProperties Expanded=true
 Minimized=true
 PhotographProperties Expanded=true
-RestoreSize=32
+RestoreSize=30
 RightsProperties Expanded=true
 TagsProperties Expanded=true
 VideoProperties Expanded=true
@@ -1881,9 +1880,9 @@ Version Properties Tab=versions
 Version Properties View Mode=2
 
 [MainWindow]
-InitialAlbumID=17
-SplitterState=AAAA/wAAAAEAAAADAAABMgAABJAAAAGSAf////8AAAAAAQE=
-ThumbbarState=AAAA/wAAAAD9AAAAAQAAAAIAAAK1AAAAjvwBAAAAAfsAAAAmAG0AYQBpAG4AdwBpAG4AZABvAHcAXwB0AGgAdQBtAGIAYgBhAHIAAAAAAAAAArUAAABcAQAABwAAArUAAARDAAAABAAAAAQAAAAIAAAACPwAAAAA
+InitialAlbumID=57
+SplitterState=AAAA/wAAAAEAAAADAAABTwAAAm8AAAGQAf////8AAAAAAQE=
+ThumbbarState=AAAA/wAAAAD9AAAAAQAAAAIAAAW9AAAAjvwBAAAAAfsAAAAmAG0AYQBpAG4AdwBpAG4AZABvAHcAXwB0AGgAdQBtAGIAYgBhAHIAAAAAAAAABb0AAAB0AP///wAABb0AAAOnAAAABAAAAAQAAAAIAAAACPwAAAAA
 
 [MaintenanceDlg Settings]
 1920x1200 screen: Window-Maximized=true
@@ -2079,9 +2078,6 @@ SortOrder=0
 [SearchBar Search Text Tool]
 CaseSensitive=0
 
-[Select Album Dialog]
-1920x1200 screen: Window-Maximized=true
-
 [Select Reference]
 AlbumComboBox-Checked=
 AlbumComboBox-CurrentIndex=1
@@ -2093,7 +2089,6 @@ AlbumComboBox-SortOrder=0
 UseWholeAlbumsEntry=false
 
 [Setup Dialog]
-1920x1200 screen: Window-Maximized=true
 2 screens: Window-Maximized=true
 Albumview Tab=0
 Camera Tab=3
@@ -2104,7 +2099,7 @@ Metadata SubTab=0
 Metadata Tab=1
 Misc Tab=4
 Plugin Tab=0
-Setup Page=0
+Setup Page=1
 Template Tab=0
 ToolTip Tab=0
 
@@ -2231,7 +2226,7 @@ Sort Order=0
 
 [import_mapwidgetview][Central Map Widget]
 Backend=marble
-Center=geo:27.048770136,88.261766946
+Center=geo:0,0
 GoogleMaps Map Type=ROADMAP
 GoogleMaps Show Map Type Control=true
 GoogleMaps Show Navigation Control=true
@@ -2283,7 +2278,7 @@ Grouping mode=2
 
 [mainwindow_tableview][Current Profile]
 Column Count=6
-Header State=AAAA/wAAAAAAAAABAAAAAQAAAAYBAAAAAAAAAAAAAAAAAAAAAAAABHsAAAAGAQEAAQAAAAAAAAAAAAAAAGT/////AAAAgQAAAAAAAAAGAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAChwAAAAEAAAAAAAAD6AAAAABkAAAAAA==
+Header State=AAAA/wAAAAAAAAABAAAAAQAAAAYBAAAAAAAAAAAAAAAAAAAAAAAABCEAAAAGAQEAAQAAAAAAAAAAAAAAAGT/////AAAAgQAAAAAAAAAGAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAACLQAAAAEAAAAAAAAD6AAAAABkAAAAAA==
 Profile Name=
 
 [mainwindow_tableview][Current Profile][Column 0]
