@@ -83,6 +83,7 @@ input * {
 	xkb_layout "us","us"
 	xkb_variant "colemak",
 	xkb_options "grp:shifts_toggle"
+	tap enabled
 }
 
 ### Key bindings
