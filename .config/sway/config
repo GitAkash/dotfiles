@@ -44,7 +44,8 @@ client.focused #DB7A24E6 #DB7A24E6 #DB7A24E6 #DB7A24E6
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /home/akash/Pictures/background/bankje.jpg fill
+output * bg /home/akash/Pictures/background/lamp.jpg fill
+
 #
 # Example configuration:
 #
