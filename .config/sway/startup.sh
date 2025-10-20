@@ -12,3 +12,4 @@ pgrep -x wireplumber > /dev/null || wireplumber &
 
 exec sway
 
+

@@ -3,7 +3,6 @@ export ZSH="$HOME/.oh-my-zsh"
 
 # Add Miniconda to the beginning of the PATH
 export PATH="$HOME/miniconda3/bin:$PATH"
-
 # Set Zsh theme (can be replaced with another theme if desired)
 ZSH_THEME="fino"
 
@@ -31,3 +30,7 @@ source "$HOME/.config/zsh/00-env.zsh"         # Environment variables and global
 source "$HOME/.config/zsh/02-functions_fzf.zsh" # FZF-related functions and keybindings
 source "$HOME/.config/zsh/03-startup.zsh"     # Startup-related configurations
 source "$HOME/.config/zsh/99-aliases.zsh"     # Aliases (always last)
+
+# Created by `pipx` on 2025-10-08 07:21:21
+export PATH="$PATH:/home/akash/.local/bin"
+

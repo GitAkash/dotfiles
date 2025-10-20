@@ -44,7 +44,7 @@ client.focused #DB7A24E6 #DB7A24E6 #DB7A24E6 #DB7A24E6
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /home/akash/Pictures/background/lamp.jpg fill
+output * bg /home/akash/Pictures/background/wolkjes.png fill
 
 #
 # Example configuration:
@@ -83,7 +83,7 @@ output * bg /home/akash/Pictures/background/lamp.jpg fill
 input * {
 	xkb_layout "us","us"
 	xkb_variant "colemak",
-	xkb_options "grp:shifts_toggle"
+	xkb_options "grp:shifts_toggle,  lv3:ralt_switch,compose:ralt"
 	tap enabled
 }
 

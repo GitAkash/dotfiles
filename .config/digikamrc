@@ -89,10 +89,10 @@ TreeView Font=Sans Serif,9,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 Update Type=0
 
 [AlbumFolderView Sidebar]
-CurrentIndex=74
-Expansion=0,1,9,10,11,13,14,15,16,17,18,19,20,22,21,23,24,25,26,27,28,29,30,32,31,33,34,36,35,37,38,39,40,41,43,42,44,45,46,3,4,5,6,7,51,52,54,55,60,62,63,57,70,71,73,74,-2
+CurrentIndex=97
+Expansion=0,1,9,10,11,13,16,19,23,26,29,33,37,40,44,4,5,6,7,50,53,58,61,56,64,67,70,73,74,77,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,-2
 RestoreChecked=false
-Selection=74
+Selection=97
 SortColumn=0
 SortOrder=0
 
@@ -100,13 +100,38 @@ SortOrder=0
 CaseSensitive=0
 
 [AlbumSelectWidget]
-AlbumTreeViewCurrentIndex=12
-AlbumTreeViewExpansion=1,8
+AlbumTreeViewCurrentIndex=13
+AlbumTreeViewExpansion=1,8,12,13
 AlbumTreeViewRestoreChecked=false
-AlbumTreeViewSelection=12
+AlbumTreeViewSelection=13
 AlbumTreeViewSortColumn=0
 AlbumTreeViewSortOrder=0
 CaseSensitive=0
+
+[Autotags Settings]
+AlbumComboBox-Checked=
+AlbumComboBox-CurrentIndex=1
+AlbumComboBox-Expansion=1
+AlbumComboBox-RestoreChecked=true
+AlbumComboBox-Selection=1
+AlbumComboBox-SortColumn=0
+AlbumComboBox-SortOrder=0
+AlbumTypeEntry=0
+Autotags Languages=
+Autotags Object Detection Accuracy=7
+Autotags Object Detection Model=efficientnetb7
+Autotags Scan Mode=0
+Autotags Tag Mode=0
+Autotags Use Full CPU=false
+TagComboBox-Checked=
+TagComboBox-CurrentIndex=4
+TagComboBox-Expansion=
+TagComboBox-RestoreChecked=true
+TagComboBox-Selection=4
+TagComboBox-SortColumn=0
+TagComboBox-SortOrder=0
+UseWholeAlbumsEntry=true
+UseWholeTagsEntry=false
 
 [Batch Queue Manager Settings]
 BqmBottomSplitter=AAAA/wAAAAEAAAACAAABegAAAQoB/////wEAAAABAA==
@@ -125,7 +150,7 @@ Resize=false
 [Camera Settings]
 AlbumBox Expanded=true
 AutoAlbumDate=true
-AutoAlbumExt=true
+AutoAlbumExt=false
 AutoRotate=false
 BackupOriginalRawFile=false
 Case Type=0
@@ -143,7 +168,7 @@ FullScreen Hide SideBars=false
 FullScreen Hide StatusBar=false
 FullScreen Hide ThumbBar=true
 FullScreen Hide ToolBars=false
-LastTargetAlbum=3
+LastTargetAlbum=77
 LossLessFormat=0
 Manual Rename String=
 OnFlyBox Expanded=false
@@ -235,7 +260,7 @@ RenderingIntent=0
 WorkProfileFile[$e]=/usr/share/digikam/profiles/srgb-d65.icm
 
 [CoreDB Settings]
-Recently Used Tags=35,36
+Recently Used Tags=41,37,42,38,39,40,35,36
 
 [DMetadata Settings]
 readingAllTags=false
@@ -973,7 +998,7 @@ tagPaths=1
 
 [Database Settings]
 Database Connectoptions=
-Database Encrypted Password=AwIdHR0=
+Database Encrypted Password=AwImJiY=
 Database Hostname=
 Database Name=/home/akash/Pictures/Digikam/
 Database Name Face=/home/akash/Pictures/Digikam/
@@ -997,9 +1022,6 @@ Selection=6
 SortColumn=0
 SortOrder=0
 
-[Delete Dialog]
-1920x1200 screen: Window-Maximized=true
-
 [Digikam Left Sidebar]
 ActiveTab=0
 Minimized=false
@@ -1011,9 +1033,9 @@ DigikamProperties Expanded=true
 FileProperties Expanded=true
 ItemProperties Expanded=true
 LocationProperties Expanded=true
-Minimized=true
+Minimized=false
 PhotographProperties Expanded=true
-RestoreSize=210
+RestoreSize=-1
 RightsProperties Expanded=true
 TagsProperties Expanded=true
 VideoProperties Expanded=true
@@ -1200,12 +1222,20 @@ AlbumComboBox-SortColumn=0
 AlbumComboBox-SortOrder=0
 AlbumTypeEntry=0
 Already Scanned Handling=0
+Face Already Scanned Handling=1
+Face Detection Accuracy=7
+Face Detection Model=0
+Face Detection Size=3
+Face Recognition Accuracy=7
+Face Recognition Model=0
 Face Scan Main Task=Detect
+Face Scan Task=0
+Face Use Full CPU=true
 TagComboBox-Checked=
 TagComboBox-CurrentIndex=4
 TagComboBox-Expansion=
 TagComboBox-RestoreChecked=true
-TagComboBox-Selection=4,35
+TagComboBox-Selection=4
 TagComboBox-SortColumn=0
 TagComboBox-SortOrder=0
 Use Full CPU=false
@@ -1255,7 +1285,7 @@ UseWholeAlbumsEntry=false
 UseWholeTagsEntry=false
 
 [Fuzzy Search Sidebar]
-CurrentIndex=5
+CurrentIndex=7
 Expansion=
 FuzzySearch Tab=1
 Pen Sketch Hue=0
@@ -1264,7 +1294,7 @@ Pen Sketch Size=10
 Pen Sketch Value=255
 RestoreChecked=false
 Result Sketch items=10
-Selection=5
+Selection=7
 Similars Maximum Threshold=100
 Similars Threshold=90
 SortColumn=0
@@ -1322,6 +1352,7 @@ CaseSensitive=0
 [General Settings]
 Application Font=Sans Serif,9,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 Apply Sidebar Changes Directly=false
+Automatically start a background face recognition scan when a new face is tagged=true
 Clean core DB At Start=false
 Detect faces in newly added images=false
 Draw Frames To Grouped Items=true
@@ -1420,6 +1451,14 @@ EXIF Tags Filter=
 
 [Image Quality Settings]
 Accepted Threshold=60
+AlbumComboBox-Checked=
+AlbumComboBox-CurrentIndex=1
+AlbumComboBox-Expansion=1
+AlbumComboBox-RestoreChecked=true
+AlbumComboBox-Selection=1
+AlbumComboBox-SortColumn=0
+AlbumComboBox-SortOrder=0
+AlbumTypeEntry=0
 Blur Weight=100
 Compression Weight=100
 Detect Aesthetic=true
@@ -1429,11 +1468,37 @@ Detect Exposure=true
 Detect Noise=true
 Exposure Weight=100
 HighQ Accepted=true
+Image Quality Accepted Threshold=60
+Image Quality Blur Weight=100
+Image Quality Compression Weight=100
+Image Quality Detect Aesthetic=true
+Image Quality Detect Blur=true
+Image Quality Detect Compression=true
+Image Quality Detect Exposure=true
+Image Quality Detect Noise=true
+Image Quality Exposure Weight=100
+Image Quality HighQ Accepted=true
+Image Quality LowQ Rejected=true
+Image Quality MediumQ Pending=true
+Image Quality Noise Weight=100
+Image Quality Pending Threshold=40
+Image Quality Rejected Threshold=10
+Image Quality Scan Mode=0
+Image Quality Use Full CPU=false
 LowQ Rejected=true
 MediumQ Pending=true
 Noise Weight=100
 Pending Threshold=40
 Rejected Threshold=10
+TagComboBox-Checked=
+TagComboBox-CurrentIndex=4
+TagComboBox-Expansion=
+TagComboBox-RestoreChecked=true
+TagComboBox-Selection=4
+TagComboBox-SortColumn=0
+TagComboBox-SortOrder=0
+UseWholeAlbumsEntry=true
+UseWholeTagsEntry=false
 
 [ImageViewer Settings]
 AVIFCompression=100
@@ -1486,7 +1551,7 @@ ShowImageSettingsDialog=true
 SixteenBitsImage=true
 SplitterState=AAAA/wAAAAEAAAACAAAHWAAAAZAB/////wAAAAABAQ==
 TIFFCompression=false
-ThumbbarState=AAAA/wAAAAD9AAAAAQAAAAAAAAEAAAAB3vwCAAAAAfsAAAAeAGUAZABpAHQAbwByAF8AdABoAHUAbQBiAGIAYQByAAAAAAAAAAHeAAAAdAD///8AAAOHAAAEFwAAAAQAAAAEAAAACAAAAAj8AAAAAA==
+ThumbbarState=AAAA/wAAAAD9AAAAAQAAAAAAAAEAAAAB3vwCAAAAAfsAAAAeAGUAZABpAHQAbwByAF8AdABoAHUAbQBiAGIAYQByAAAAAAAAAAHeAAAAbgD///8AAAOZAAAEJQAAAAQAAAAEAAAACAAAAAj8AAAAAA==
 Unclip Color=0
 UnderExposureColor=255,255,255
 UnderExposureIndicator=false
@@ -1596,8 +1661,8 @@ IgnoreExtensions=dsp dps
 IgnoreNames=mgr_data pgr_mgr
 
 [Import MainWindow]
-SplitterState=AAAA/wAAAAEAAAABAAABjQH/////AAAAAAEB
-ThumbbarState=AAAA/wAAAAD9AAAAAQAAAAIAAAXaAAAAwPwBAAAAAfsAAAAeAGkAbQBwAG8AcgB0AF8AdABoAHUAbQBiAGIAYQByAAAAAAAAAAXaAAAAdAD///8AAAHZAAAEFwAAAAQAAAAEAAAACAAAAAj8AAAAAA==
+SplitterState=AAAA/wAAAAEAAAABAAABjwH/////AAAAAAEB
+ThumbbarState=AAAA/wAAAAD9AAAAAQAAAAIAAAXaAAAAwPwBAAAAAfsAAAAeAGkAbQBwAG8AcgB0AF8AdABoAHUAbQBiAGIAYQByAAAAAAAAAAXaAAAAbgD///8AAAHrAAAEJQAAAAQAAAAEAAAACAAAAAj8AAAAAA==
 
 [Import Settings]
 Default Icon Size=142
@@ -1661,10 +1726,10 @@ CaseSensitive=0
 CaseSensitive=0
 
 [ItemIconViewTagFilterView]
-CurrentIndex=35
+CurrentIndex=4
 Expansion=
 RestoreChecked=false
-Selection=35
+Selection=4
 SortColumn=0
 SortOrder=0
 Toggle Auto Tags=0
@@ -1700,6 +1765,7 @@ targetUrl=
 [Labels Sidebar]
 ColorSelection=
 Expansion=
+ImageQualityScanWidgetExpanded=true
 PickSelection=
 RatingSelection=1
 
@@ -1713,7 +1779,7 @@ FullScreen Hide ToolBars=false
 Horizontal Splitter State=AAAA/wAAAAEAAAADAAABkAAAAHQAAAGQAf////8AAAAAAQE=
 Navigate By Pair=true
 Show Thumbbar=true
-ThumbbarState=AAAA/wAAAAD9AAAAAQAAAAIAAANSAAAAwPwBAAAAAfsAAAAmAGwAaQBnAGgAdAB0AGEAYgBsAGUAXwB0AGgAdQBtAGIAYgBhAHIAAAAAAAAAA1IAAAB0AP///wAAA1IAAAQXAAAABAAAAAQAAAAIAAAACPwAAAAA
+ThumbbarState=AAAA/wAAAAD9AAAAAQAAAAIAAAN6AAAAwPwBAAAAAfsAAAAmAGwAaQBnAGgAdAB0AGEAYgBsAGUAXwB0AGgAdQBtAGIAYgBhAHIAAAAAAAAAA3oAAABuAP///wAAA3oAAAQsAAAABAAAAAQAAAAIAAAACPwAAAAA
 
 [LightTable Settings][Left Sidebar]
 ActiveTab=2
@@ -1880,9 +1946,9 @@ Version Properties Tab=versions
 Version Properties View Mode=2
 
 [MainWindow]
-InitialAlbumID=74
-SplitterState=AAAA/wAAAAEAAAADAAABTwAAAm8AAAGQAf////8AAAAAAQE=
-ThumbbarState=AAAA/wAAAAD9AAAAAQAAAAIAAAW9AAAAjvwBAAAAAfsAAAAmAG0AYQBpAG4AdwBpAG4AZABvAHcAXwB0AGgAdQBtAGIAYgBhAHIAAAAAAAAABb0AAAB0AP///wAABb0AAAQ5AAAABAAAAAQAAAAIAAAACPwAAAAA
+InitialAlbumID=97
+SplitterState=AAAA/wAAAAEAAAADAAACVwAABaAAAAGIAf////8AAAAAAQE=
+ThumbbarState=AAAA/wAAAAD9AAAAAQAAAAIAAANJAAAAjvwBAAAAAfsAAAAmAG0AYQBpAG4AdwBpAG4AZABvAHcAXwB0AGgAdQBtAGIAYgBhAHIAAAAAAAAAA0kAAABuAP///wAAA0kAAAOxAAAABAAAAAQAAAAIAAAACPwAAAAA
 
 [MaintenanceDlg Settings]
 1920x1200 screen: Window-Maximized=true
@@ -2013,7 +2079,7 @@ EXIF Set Orientation=true
 ExifTool Path=
 Metadata Writing Mode=1
 Read Metadata From Files With ExifTool=false
-Rescan File If Modified=false
+Rescan File If Modified=true
 Rotate By Internal Flag=true
 Rotate By Metadata Flag=true
 Rotate Contents Lossless=true
@@ -2021,9 +2087,9 @@ Rotate Contents Lossy=false
 Save Color Label=true
 Save Date Time=true
 Save EXIF Comments=true
-Save FaceTags=false
+Save FaceTags=true
 Save Pick Label=true
-Save Position=false
+Save Position=true
 Save Rating=true
 Save Tags=true
 Save Template=true
@@ -2043,10 +2109,11 @@ CaseSensitive=0
 HelpBoxNotifSeen=true
 
 [People Sidebar]
-CurrentIndex=4
-Expansion=4,7,5,6
+CurrentIndex=5
+Expansion=4,7,5,6,41,38,37,39,42,40
+FaceScanWidgetExpanded=true
 RestoreChecked=false
-Selection=4
+Selection=5
 SortColumn=0
 SortOrder=0
 
@@ -2068,10 +2135,10 @@ Resize=false
 CaseSensitive=0
 
 [Search Sidebar]
-CurrentIndex=
+CurrentIndex=1
 Expansion=1
 RestoreChecked=false
-Selection=
+Selection=1
 SortColumn=0
 SortOrder=0
 
@@ -2089,6 +2156,8 @@ AlbumComboBox-SortOrder=0
 UseWholeAlbumsEntry=false
 
 [Setup Dialog]
+1920x1200 screen: Height=674
+1920x1200 screen: Width=1132
 2 screens: Window-Maximized=true
 Albumview Tab=0
 Camera Tab=3
@@ -2096,10 +2165,10 @@ Editor Tab=2
 Geolocation Tab=0
 ICC Tab=0
 Metadata SubTab=0
-Metadata Tab=1
+Metadata Tab=5
 Misc Tab=4
 Plugin Tab=0
-Setup Page=1
+Setup Page=4
 Template Tab=0
 ToolTip Tab=0
 
@@ -2154,13 +2223,14 @@ TypeGeolocationFilter Expanded=true
 TypeMimeFilter Expanded=true
 
 [TagView Sidebar]
-CurrentIndex=6
-Expansion=0,4,7,5,6
+AutotagScanWidgetExpanded=true
+CurrentIndex=31
+Expansion=0,4,7,5,6,27,32,34,33,29,30,36
 RestoreChecked=false
-Selection=6
+Selection=31
 SortColumn=0
 SortOrder=1
-TagsSource=false
+TagsSource=true
 
 [TimeLine Sidebar]
 CurrentIndex=
@@ -2278,7 +2348,7 @@ Grouping mode=2
 
 [mainwindow_tableview][Current Profile]
 Column Count=6
-Header State=AAAA/wAAAAAAAAABAAAAAQAAAAYBAAAAAAAAAAAAAAAAAAAAAAAABCEAAAAGAQEAAQAAAAAAAAAAAAAAAGT/////AAAAgQAAAAAAAAAGAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAACLQAAAAEAAAAAAAAD6AAAAABkAAAAAA==
+Header State=AAAA/wAAAAAAAAABAAAAAQAAAAYBAAAAAAAAAAAAAAAAAAAAAAAAA0MAAAAGAQEAAQAAAAAAAAAAAAAAAGT/////AAAAgQAAAAAAAAAGAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAABTwAAAAEAAAAAAAAD6AAAAABkAAAAAA==
 Profile Name=
 
 [mainwindow_tableview][Current Profile][Column 0]

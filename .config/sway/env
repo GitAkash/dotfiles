@@ -1,4 +1,11 @@
+# Qt5 theming
 export QT_QPA_PLATFORMTHEME=qt5ct
 export QT_STYLE_OVERRIDE=kvantum
+
+# Qt6 theming
+export QT_QPA_PLATFORMTHEME_QT6=qt6ct
+export QT_STYLE_OVERRIDE_QT6=kvantum
+
+# Other
 export KDE_COLOR_SCHEME=swaydark
 export LANG=nl_NL.UTF-8
