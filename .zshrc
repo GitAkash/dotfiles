@@ -9,7 +9,7 @@ ZSH_THEME="fino"
 # Set plugins (you can still load them as you normally would in Oh My Zsh)
 plugins=(
   git
-  z
+  #z
   zsh-autosuggestions
   zsh-syntax-highlighting
   fzf
@@ -34,3 +34,8 @@ source "$HOME/.config/zsh/99-aliases.zsh"     # Aliases (always last)
 # Created by `pipx` on 2025-10-08 07:21:21
 export PATH="$PATH:/home/akash/.local/bin"
 
+
+# >>> Added by Spyder >>>
+alias spyder=/home/akash/.local/spyder-6/envs/spyder-runtime/bin/spyder
+alias uninstall-spyder=/home/akash/.local/spyder-6/uninstall-spyder.sh
+# <<< Added by Spyder <<<

@@ -32,7 +32,7 @@ set $menu fuzzel
 #remove titlebar
 default_border pixel 2
 default_floating_border pixel 2
-default_dim_inactive 0.3
+default_dim_inactive 0
 blur enable
 
 
