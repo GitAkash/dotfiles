@@ -9,4 +9,13 @@ alias cp="cp -aiv"
 alias ts="tailscale"
 alias df="duf"
 alias cccp="~/.config/zsh/scripts/tmux_arago.sh"
+
+# >>> Added by Spyder >>>
+alias spyder=/home/akash/.local/spyder-6/envs/spyder-runtime/bin/spyder
+alias uninstall-spyder=/home/akash/.local/spyder-6/uninstall-spyder.sh
+# <<< Added by Spyder <<<
+
+
+
+
 eval "$(zoxide init --cmd cd zsh)"
