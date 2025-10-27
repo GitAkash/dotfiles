@@ -1,0 +1,10 @@
+Convert the txt to the correct header with the following command:
+```
+awk 'BEGIN{print "const char *jokes[] = {"} 
+{
+    gsub(/\\/,"\\\\");      # escape backslashes
+    gsub(/"/,"\\\"");       # escape double quotes
+    print "    \"" $0 "\","
+} 
+END{print "};"}' dadjokes.txt > jokes.h
+```
