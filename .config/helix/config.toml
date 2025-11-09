@@ -10,12 +10,12 @@ theme = "amberwood"
 # -------------------------
 # N <=> K (K is in the QWERTY N position)
 n = "move_char_left"
-N = "keep_selections"
+# N = "keep_selections"
 k = "search_next"
 K = "search_prev"
 # E <=> J (J now 'jumps words')
 e = "move_line_down"
-E = "join_selections"
+# E = "join_selections"
 j = "move_next_word_end"
 J = "move_next_long_word_end"
 # H <=> I (H is just a sideways I)
@@ -64,7 +64,7 @@ L = "redo"
 l = "goto_implementation"
 i = "goto_line_end"
 # gh (line start) <=> gn (next buffer)
-h = "goto_next_buffer"
+h = "no_op"
 n = "goto_line_start"
 # gj (down) <=> ge (last line)
 j = "goto_last_line" 
@@ -79,7 +79,7 @@ u = "move_line_up"
 l = "goto_implementation"
 i = "goto_line_end"
 # gh (line start) <=> gn (next buffer)
-h = "goto_next_buffer"
+h = "no_op"
 n = "goto_line_start"
 # gj (down) <=> ge (last line)
 j = "goto_last_line" 
@@ -88,6 +88,14 @@ e = "extend_line_down"
 k = "no_op"
 u = "extend_line_up"
 
-
 [editor.soft-wrap]
 enable = true
+
+[editor.indent-guides]
+render = true
+
+[editor]
+bufferline = "multiple"
+line-number = "relative"
+cursorline = true
+color-modes = true
