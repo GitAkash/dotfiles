@@ -1,0 +1,16 @@
+#!/bin/sh
+SERVICE_NAME="wireplumber"
+
+# 1. Redirect LOGGER lock files to RAM (Keep .config clean)
+# We append '-log' to avoid conflicting with the main service lock
+SVDIR="${XDG_RUNTIME_DIR:-/run/user/$(id -u)}/runit/${SERVICE_NAME}-log"
+mkdir -p "$SVDIR"
+ln -sT "$SVDIR" ./supervise 2>/dev/null
+
+# 2. Define where the actual log files go (Persist on Disk)
+LOGDIR="$HOME/.local/state/runit/logs/${SERVICE_NAME}"
+mkdir -p "$LOGDIR"
+
+# 3. Start the logger
+# -tt = Add timestamp
+exec svlogd -tt "$LOGDIR"

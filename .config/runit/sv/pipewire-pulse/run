@@ -1,0 +1,8 @@
+#!/bin/sh
+# Redirect lock files to RAM
+SVDIR="${XDG_RUNTIME_DIR:-/run/user/$(id -u)}/runit/pipewire-pulse"
+mkdir -p "$SVDIR"
+ln -sT "$SVDIR" ./supervise 2>/dev/null
+
+# Start the process
+exec pipewire-pulse

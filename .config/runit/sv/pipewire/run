@@ -1,0 +1,8 @@
+#!/bin/sh
+# Redirect lock files to RAM (keeps .config clean)
+SVDIR="${XDG_RUNTIME_DIR:-/run/user/$(id -u)}/runit/pipewire"
+mkdir -p "$SVDIR"
+ln -sT "$SVDIR" ./supervise 2>/dev/null
+
+# Start the process
+exec pipewire
