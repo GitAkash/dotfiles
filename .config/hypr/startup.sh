@@ -22,5 +22,5 @@ if ! pgrep -x "udiskie" > /dev/null; then
   exec udiskie --smart-tray &
 fi
 
-exec Hyprland
+exec start-hyprland
 

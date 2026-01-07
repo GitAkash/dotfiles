@@ -89,10 +89,10 @@ TreeView Font=Sans Serif,9,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 Update Type=0
 
 [AlbumFolderView Sidebar]
-CurrentIndex=97
-Expansion=0,1,9,10,11,13,16,19,23,26,29,33,37,40,44,4,5,6,7,50,53,58,61,56,64,67,70,73,74,77,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,-2
+CurrentIndex=79
+Expansion=0,1,9,10,11,13,16,19,23,26,29,33,37,40,44,4,5,6,7,50,53,58,61,56,64,67,70,73,74,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,-2
 RestoreChecked=false
-Selection=97
+Selection=79
 SortColumn=0
 SortOrder=0
 
@@ -127,7 +127,7 @@ TagComboBox-Checked=
 TagComboBox-CurrentIndex=4
 TagComboBox-Expansion=
 TagComboBox-RestoreChecked=true
-TagComboBox-Selection=27,4
+TagComboBox-Selection=4
 TagComboBox-SortColumn=0
 TagComboBox-SortOrder=0
 UseWholeAlbumsEntry=true
@@ -1002,7 +1002,7 @@ tagPaths=1
 
 [Database Settings]
 Database Connectoptions=
-Database Encrypted Password=AwKMjIw=
+Database Encrypted Password=AwJJSUk=
 Database Hostname=
 Database Name=/home/akash/Pictures/Digikam/
 Database Name Face=/home/akash/Pictures/Digikam/
@@ -1239,7 +1239,7 @@ TagComboBox-Checked=
 TagComboBox-CurrentIndex=4
 TagComboBox-Expansion=
 TagComboBox-RestoreChecked=true
-TagComboBox-Selection=27,4
+TagComboBox-Selection=4
 TagComboBox-SortColumn=0
 TagComboBox-SortOrder=0
 Use Full CPU=false
@@ -1279,10 +1279,10 @@ Last search album tag relation=0
 Last search results restriction=0
 Lower bound for minimum similarity=40
 TagComboBox-Checked=
-TagComboBox-CurrentIndex=27
+TagComboBox-CurrentIndex=4
 TagComboBox-Expansion=
 TagComboBox-RestoreChecked=true
-TagComboBox-Selection=27
+TagComboBox-Selection=4
 TagComboBox-SortColumn=0
 TagComboBox-SortOrder=0
 UseWholeAlbumsEntry=false
@@ -1498,7 +1498,7 @@ TagComboBox-Checked=
 TagComboBox-CurrentIndex=4
 TagComboBox-Expansion=
 TagComboBox-RestoreChecked=true
-TagComboBox-Selection=27,4
+TagComboBox-Selection=4
 TagComboBox-SortColumn=0
 TagComboBox-SortOrder=0
 UseWholeAlbumsEntry=true
@@ -1950,9 +1950,9 @@ Version Properties Tab=versions
 Version Properties View Mode=2
 
 [MainWindow]
-InitialAlbumID=97
+InitialAlbumID=79
 SplitterState=AAAA/wAAAAEAAAADAAACVwAABaAAAAGIAf////8AAAAAAQE=
-ThumbbarState=AAAA/wAAAAD9AAAAAQAAAAIAAANJAAAAjvwBAAAAAfsAAAAmAG0AYQBpAG4AdwBpAG4AZABvAHcAXwB0AGgAdQBtAGIAYgBhAHIAAAAAAAAAA0kAAABuAP///wAAASAAAAHuAAAABAAAAAQAAAAIAAAACPwAAAAA
+ThumbbarState=AAAA/wAAAAD9AAAAAQAAAAIAAAM/AAAAjvwBAAAAAfsAAAAmAG0AYQBpAG4AdwBpAG4AZABvAHcAXwB0AGgAdQBtAGIAYgBhAHIAAAAAAAAAAz8AAABuAP///wAAAz8AAAOnAAAABAAAAAQAAAAIAAAACPwAAAAA
 
 [MaintenanceDlg Settings]
 1920x1200 screen: Window-Maximized=true
@@ -2352,7 +2352,7 @@ Grouping mode=2
 
 [mainwindow_tableview][Current Profile]
 Column Count=6
-Header State=AAAA/wAAAAAAAAABAAAAAQAAAAYBAAAAAAAAAAAAAAAAAAAAAAAAA0MAAAAGAQEAAQAAAAAAAAAAAAAAAGT/////AAAAgQAAAAAAAAAGAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAABTwAAAAEAAAAAAAAD6AAAAABkAAAAAA==
+Header State=AAAA/wAAAAAAAAABAAAAAQAAAAYBAAAAAAAAAAAAAAAAAAAAAAAAA0MAAAAGAQEAAQAAAAAAAAAAAAAAAGT/////AAAAgQAAAAAAAAAGAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAABTwAAAAEAAAAAAAAD6AAAAABkAAAAAAAAAAAAAAAAAAAAAQ==
 Profile Name=
 
 [mainwindow_tableview][Current Profile][Column 0]
