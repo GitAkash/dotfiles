@@ -14,7 +14,7 @@ fi
 # Link your scripts from Config -> State
 # Using -sf ensures it always points to your config, even if you moved files
 ln -sf "$HOME/.config/runit/sv/pipewire" "$HOME/.local/state/runit/service/"
-ln -sf "$HOME/.config/runit/sv/wireplumber" "$HOME/.local/state/runit/service/"
+#ln -sf "$HOME/.config/runit/sv/wireplumber" "$HOME/.local/state/runit/service/"
 ln -sf "$HOME/.config/runit/sv/pipewire-pulse" "$HOME/.local/state/runit/service/"
 
 # --- WAIT FOR AUDIO ---
