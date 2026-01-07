@@ -1,25 +1,42 @@
 #!/bin/sh
 
-# --- PORTABILITY CHECK ---
-# Ensure the state directory exists (in case this is a new PC)
-mkdir -p "$HOME/.local/state/runit/service"
+# --- Helper function: wait for PipeWire socket ---
+wait_for_pipewire() {
+    SOCKET="${XDG_RUNTIME_DIR}/pipewire-0"
+    TRIES=0
+    MAX_TRIES=50   # ~5 seconds max
+    while [ ! -e "$SOCKET" ]; do
+        sleep 0.1
+        TRIES=$((TRIES + 1))
+        if [ $TRIES -ge $MAX_TRIES ]; then
+            echo "Warning: PipeWire socket not found after timeout"
+            break
+        fi
+    done
+}
 
-# --- START RUNIT ---
-# Tell runit to watch the STATE folder
-if ! pgrep -f "runsvdir $HOME/.local/state/runit/service"; then
-  runsvdir "$HOME/.local/state/runit/service" &
+# --- Start PipeWire if not running ---
+if ! pgrep -x "pipewire" > /dev/null; then
+    pipewire &
 fi
 
-# --- ENABLE SERVICES ---
-# Link your scripts from Config -> State
-# Using -sf ensures it always points to your config, even if you moved files
-ln -sf "$HOME/.config/runit/sv/pipewire" "$HOME/.local/state/runit/service/"
-#ln -sf "$HOME/.config/runit/sv/wireplumber" "$HOME/.local/state/runit/service/"
-ln -sf "$HOME/.config/runit/sv/pipewire-pulse" "$HOME/.local/state/runit/service/"
+# --- Start PipeWire Pulse if not running ---
+if ! pgrep -x "pipewire-pulse" > /dev/null; then
+    pipewire-pulse &
+fi
 
-# --- WAIT FOR AUDIO ---
-# Wait for Pipewire to actually start
-while [ ! -e "${XDG_RUNTIME_DIR}/pipewire-0" ]; do sleep 0.1; done
+# --- Wait until PipeWire is ready ---
+wait_for_pipewire
 
-# --- START HYPRLAND ---
+# --- Start WirePlumber if not running ---
+if ! pgrep -x "wireplumber" > /dev/null; then
+    wireplumber &
+fi
+
+# --- Automount USB with udiskie if not running ---
+if ! pgrep -x "udiskie" > /dev/null; then
+    udiskie --smart-tray &
+fi
+
+# --- Start Hyprland ---
 exec start-hyprland
