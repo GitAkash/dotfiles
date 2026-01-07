@@ -4,5 +4,8 @@ SVDIR="${XDG_RUNTIME_DIR:-/run/user/$(id -u)}/runit/wireplumber"
 mkdir -p "$SVDIR"
 ln -sT "$SVDIR" ./supervise 2>/dev/null
 
+# Redirect stderr to stdout so svlogd can see the logs
+exec 2>&1
+
 # Start the process
 exec wireplumber
