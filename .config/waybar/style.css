@@ -1,3 +1,19 @@
+/* === COLOR SCHEME === */
+@define-color base_white #ffffff;
+@define-color base_black #000000;
+@define-color accent_gray rgba(255, 255, 255, 0.3);
+@define-color hover_bg rgba(0, 0, 0, 0.2);
+
+/* States */
+@define-color status_ok #99ff99;
+@define-color status_warn #FF7377;
+@define-color status_crit #eb4d4b;
+
+/* Module Specifics */
+@define-color idle_bg #2d3436;
+@define-color idle_active #ecf0f1;
+@define-color mode_bg #64727D;
+
 /* === GLOBAL DEFAULTS === */
 * {
     font-family: "0xProto Nerd Font";
@@ -8,7 +24,7 @@
 /* === WAYBAR WINDOW === */
 window#waybar {
     background-color: transparent;
-    color: #ffffff;
+    color: @base_white;
     transition: background-color 0.5s;
 }
 
@@ -16,14 +32,8 @@ window#waybar.hidden {
     opacity: 0.2;
 }
 
-window#waybar.termite {
-    background-color: #3F3F3F;
-}
-
-window#waybar.chromium {
-    background-color: #000000;
-    border: none;
-}
+window#waybar.termite { background-color: #3F3F3F; }
+window#waybar.chromium { background-color: @base_black; border: none; }
 
 /* === MODULE WINDOW TITLE === */
 #window {
@@ -42,20 +52,19 @@ window#waybar.chromium {
     min-height: 10px;
     padding: 0px 3px;
     background-color: transparent;
-    color: #ffffff;
-    border: 0px solid white;
+    color: @base_white;
+    border: 0px solid @base_white;
     border-radius: 6px;
 }
 
 #workspaces button:hover {
-    background: rgba(0, 0, 0, 0.2);
+    background: @hover_bg;
 }
 
 #workspaces button.focused,
 #workspaces button.active {
     transition: 0.3s ease;
-    /*background-color: #64727D;*/
-    background-color: rgba(255,255,255,0.3);
+    background-color: @accent_gray;
     font-style: italic;
 }
 
@@ -64,46 +73,27 @@ window#waybar.chromium {
 }
 
 /* === MODULE POSITIONING === */
-.modules-left > widget:first-child > #workspaces {
-    margin-left: 0px;
-}
-
-.modules-right > widget:last-child > #workspaces {
-    margin-right: 0px;
-}
+.modules-left > widget:first-child > #workspaces { margin-left: 0px; }
+.modules-right > widget:last-child > #workspaces { margin-right: 0px; }
 
 /* === COMMON MODULE STYLING === */
-#clock,
-#battery,
-#cpu,
-#memory,
-#disk,
-#temperature,
-#backlight,
-#network,
-#pulseaudio,
-#wireplumber,
-#custom-media,
-#tray,
-#mode,
-#idle_inhibitor,
-#scratchpad,
-#power-profiles-daemon,
-#mpd {
+#clock, #battery, #cpu, #memory, #disk, #temperature, #backlight, 
+#network, #pulseaudio, #wireplumber, #custom-media, #tray, #mode, 
+#idle_inhibitor, #scratchpad, #power-profiles-daemon, #mpd {
     padding-left: 12px;
     padding-right: 12px;
     margin: 0 0px;
-    color: #ffffff;
+    color: @base_white;
 }
 
-/* === BATTERY === */
+/* === HARDWARE STATUS === */
 #battery {
     margin-right: 5px;
 }
 
 #battery.charging,
 #battery.plugged {
-    color: #99ff99;
+    color: @status_ok;
 }
 
 #battery.critical:not(.charging) {
@@ -111,51 +101,44 @@ window#waybar.chromium {
 }
 
 #network.disconnected {
-    color: #FF7377;
+    color: @status_warn;
 }
 
-/* === IDLE INHIBITOR === */
+/* === UTILITY MODULES === */
 #idle_inhibitor {
-    background-color: #2d3436;
+    background-color: @idle_bg;
 }
 
 #idle_inhibitor.activated {
-    background-color: #ecf0f1;
-    color: #2d3436;
+    background-color: @idle_active;
+    color: @idle_bg;
 }
 
-/* === MODE === */
 #mode {
-    background-color: #64727D;
-    box-shadow: inset 0 -3px #ffffff;
+    background-color: @mode_bg;
+    box-shadow: inset 0 -3px @base_white;
 }
 
-/* === SCRATCHPAD === */
 #scratchpad {
-    background: rgba(0, 0, 0, 0.2);
+    background: @hover_bg;
 }
 
 #scratchpad.empty {
     background-color: transparent;
 }
 
-
-/* === TRAY === */
-#tray > .passive {
-    -gtk-icon-effect: dim;
-}
-
+#tray > .passive { -gtk-icon-effect: dim; }
 #tray > .needs-attention {
     -gtk-icon-effect: highlight;
-    background-color: #eb4d4b;
+    background-color: @status_crit;
 }
 
-/* === ACCESSIBILITY === */
+/* === ACCESSIBILITY & OVERRIDES === */
 label:focus {
-    background-color: #000000;
+    background-color: @base_black;
 }
 
-/* Fixing assymetries idk */
+/* Fixing asymmetries (Preserved exactly) */
 #pulseaudio {
     min-width: 10px;
     padding-left: 0px;
@@ -166,12 +149,10 @@ label:focus {
     padding-left: 6px;
 }
 
-
-/* animations */
+/* === ANIMATIONS === */
 @keyframes blink {
     to {
-        background-color: #ffffff;
-        color: #000000;
+        background-color: @base_white;
+        color: @base_black;
     }
 }
-
