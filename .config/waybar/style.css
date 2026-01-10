@@ -76,9 +76,9 @@ window#waybar.hidden {
 #clock, #battery, #cpu, #memory, #disk, #temperature, #backlight, 
 #network, #pulseaudio, #wireplumber, #custom-media, #tray, #mode, 
 #idle_inhibitor, #scratchpad, #power-profiles-daemon, #language, #mpd {
-    padding-left: 6px;
-    padding-right: 6px;
-    margin: 0 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 0 2px;
     color: @base_white;
 }
 
@@ -133,8 +133,13 @@ label:focus {
 
 /* Fixing asymmetries (Preserved exactly) */
 #pulseaudio {
-    padding-left: 3px;
-    padding-right: 3px;
+    /*padding-left: 2px;
+    padding-right: 2px;*/
+    margin: 0 -2px;
+}
+
+#clock {
+    margin-left: 10px;
 }
 
 /* === ANIMATIONS === */

@@ -40,7 +40,7 @@
 
     },
     "clock": {
-        "format": "{:%a %H:%M}"
+        "format": "{:%a %d %H:%M}"
     },
 
     "battery": {
