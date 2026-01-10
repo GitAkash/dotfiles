@@ -25,7 +25,6 @@
 window#waybar {
     background-color: transparent;
     color: @base_white;
-    transition: background-color 0.5s;
 }
 
 window#waybar.hidden {
@@ -60,7 +59,7 @@ window#waybar.hidden {
 
 #workspaces button.focused,
 #workspaces button.active {
-    transition: 0.3s ease;
+    transition: 0.5s ease;
     background-color: @accent_gray;
     font-style: italic;
 }
@@ -76,17 +75,14 @@ window#waybar.hidden {
 /* === COMMON MODULE STYLING === */
 #clock, #battery, #cpu, #memory, #disk, #temperature, #backlight, 
 #network, #pulseaudio, #wireplumber, #custom-media, #tray, #mode, 
-#idle_inhibitor, #scratchpad, #power-profiles-daemon, #mpd {
-    padding-left: 12px;
-    padding-right: 12px;
+#idle_inhibitor, #scratchpad, #power-profiles-daemon, #language, #mpd {
+    padding-left: 6px;
+    padding-right: 6px;
     margin: 0 0px;
     color: @base_white;
 }
 
 /* === HARDWARE STATUS === */
-#battery {
-    margin-right: 5px;
-}
 
 #battery.charging,
 #battery.plugged {
@@ -137,13 +133,8 @@ label:focus {
 
 /* Fixing asymmetries (Preserved exactly) */
 #pulseaudio {
-    min-width: 10px;
-    padding-left: 0px;
-    padding-right: 0px;
-}
-
-#clock {
-    padding-left: 6px;
+    padding-left: 3px;
+    padding-right: 3px;
 }
 
 /* === ANIMATIONS === */

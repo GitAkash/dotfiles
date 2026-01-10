@@ -74,7 +74,7 @@
     },
 
     "hyprland/language": {
-	"format": "{} 󰌌 ",
+	"format": "{} 󰌌",
 	"on-click": "hyprctl switchxkblayout at-translated-set-2-keyboard next",
 	"format-en": "US",
     	"format-en-colemak": "CMK"
