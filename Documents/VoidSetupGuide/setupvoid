@@ -9,7 +9,17 @@ For making sudo useable on colemak: (DID THIS REALLY DO SOMETHING?)
  su
  echo 'Defaults env_keep += "LANG LANGUAGE LINGUAS LC_* _XKB_CHARSET"' >> /etc/sudoers
 
- Upgrade firmware using fwupd, read about it @aw when really needed. I update my thinkpad with it.
+ Upgrade firmware using fwupdmgr, read about it @aw when really needed. I update my thinkpad with it.
  
  /etc/udev/hwdb.d/60-keyboard.hwdb  << removed the zoom option here to remove the stupid error showing up
-then run: "udevadm hwdb --update && udevadm control --reload-rules && udevadm trigger" 
+then run: "udevadm hwdb --update && udevadm control --reload-rules && udevadm trigger"
+
+powermngr: tlp
+
+
+Cool packages:
+Storage check: ncdu
+cd replacement: z
+monitor system: btop
+text editor: helix
+

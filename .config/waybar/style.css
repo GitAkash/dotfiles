@@ -1,8 +1,7 @@
 /* === GLOBAL DEFAULTS === */
 * {
-    font-family: FontAwesome, CaskaydiaCove NFM;
+    font-family: DaddyTimeMono;
     font-size: 13px;
-    font-style: italic;
 }
 
 /* === WAYBAR WINDOW === */
@@ -27,49 +26,49 @@ window#waybar.chromium {
 
 /* === MODULE WINDOW TITLE === */
 #window {
-    margin: 2;
+    margin: 2px;
     padding: 0 8px;
     border-radius: 5px;
     font-size: 14px;
-    font-weight: bold;
 }
 
 /* === WORKSPACES === */
 #workspaces {
-    margin: 0 4px;
+    margin: 0px 5px;
 }
 
 #workspaces button {
-    padding: 0 5px;
+    min-height: 10px;
+    padding: 0px 3px;
     background-color: transparent;
     color: #ffffff;
-    border: 10px;
-    border-radius: 0;
-    box-shadow: inset 0 -3px transparent;
+    border: 0px solid white;
+    border-radius: 6px;
 }
 
 #workspaces button:hover {
     background: rgba(0, 0, 0, 0.2);
-    box-shadow: inset 0 -3px #ffffff;
 }
 
 #workspaces button.focused,
 #workspaces button.active {
-    background-color: #64727D;
-    box-shadow: inset 0 -3px #ffffff;
+    transition: 0.3s ease;
+    /*background-color: #64727D;*/
+    background-color: rgba(255,255,255,0.3);
+    font-style: italic;
 }
 
 #workspaces button.urgent {
-    background-color: #eb4d4b;
+    animation: blink 0.5s steps(12) infinite alternate;
 }
 
 /* === MODULE POSITIONING === */
 .modules-left > widget:first-child > #workspaces {
-    margin-left: 0;
+    margin-left: 0px;
 }
 
 .modules-right > widget:last-child > #workspaces {
-    margin-right: 0;
+    margin-right: 0px;
 }
 
 /* === COMMON MODULE STYLING === */
@@ -90,13 +89,15 @@ window#waybar.chromium {
 #scratchpad,
 #power-profiles-daemon,
 #mpd {
-    padding: 0 10px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin: 0 0px;
     color: #ffffff;
 }
 
 /* === BATTERY === */
 #battery {
-    margin-left: 5px;
+    margin-right: 5px;
 }
 
 #battery.charging,
@@ -108,117 +109,8 @@ window#waybar.chromium {
     animation: blink 0.5s steps(12) infinite alternate;
 }
 
-@keyframes blink {
-    to {
-        margin-left: 5px;
-        background-color: #ffffff;
-        color: #000000;
-    }
-}
-
-/* === POWER PROFILES DAEMON === */
-#power-profiles-daemon {
-    padding-right: 15px;
-}
-
-#power-profiles-daemon.performance {
-    background-color: #f53c3c;
-}
-
-#power-profiles-daemon.balanced {
-    background-color: #2980b9;
-}
-
-#power-profiles-daemon.power-saver {
-    background-color: #2ecc71;
-    color: #000000;
-}
-
-/* === SYSTEM STATUS MODULES === */
-#cpu {
-    background-color: #2ecc71;
-    color: #000000;
-}
-
-#memory {
-    background-color: #9b59b6;
-}
-
-#disk {
-    background-color: #964B00;
-}
-
-#temperature {
-    background-color: #f0932b;
-}
-
-#temperature.critical {
-    background-color: #eb4d4b;
-}
-
-#backlight {
-    background-color: #90b1b1;
-}
-
-/* === NETWORK === */
-#network {
-    margin-left: 5px;
-}
-
 #network.disconnected {
     color: #FF7377;
-}
-
-/* === AUDIO === */
-#pulseaudio,
-#pulseaudio.muted {
-    margin-left: 5px;
-}
-
-#pulseaudio:hover {
-    background-color: #a37800;
-}
-
-#wireplumber {
-    background-color: #fff0f5;
-    color: #000000;
-}
-
-#wireplumber.muted {
-    background-color: #f53c3c;
-}
-
-/* === CUSTOM MEDIA === */
-#custom-media {
-    background-color: #66cc99;
-    color: #2a5c45;
-    min-width: 100px;
-}
-
-#custom-media.custom-spotify {
-    background-color: #66cc99;
-}
-
-#custom-media.custom-vlc {
-    background-color: #ffa000;
-}
-
-/* === MPD === */
-#mpd {
-    background-color: #66cc99;
-    color: #2a5c45;
-}
-
-#mpd.disconnected {
-    background-color: #f53c3c;
-}
-
-#mpd.stopped {
-    background-color: #90b1b1;
-}
-
-#mpd.paused {
-    background-color: #51a37a;
 }
 
 /* === IDLE INHIBITOR === */
@@ -246,51 +138,6 @@ window#waybar.chromium {
     background-color: transparent;
 }
 
-/* === PRIVACY INDICATORS === */
-#privacy {
-    padding: 0;
-}
-
-#privacy-item {
-    padding: 0 5px;
-    color: white;
-}
-
-#privacy-item.screenshare {
-    background-color: #cf5700;
-}
-
-#privacy-item.audio-in {
-    background-color: #1ca000;
-}
-
-#privacy-item.audio-out {
-    background-color: #0069d4;
-}
-
-/* === INPUT STATE === */
-#language {
-    background: #00b093;
-    color: #740864;
-    padding: 0 5px;
-    margin: 0 5px;
-    min-width: 16px;
-}
-
-#keyboard-state {
-    background: #97e1ad;
-    color: #000000;
-    margin: 0 5px;
-    min-width: 16px;
-}
-
-#keyboard-state > label {
-    padding: 0 5px;
-}
-
-#keyboard-state > label.locked {
-    background: rgba(0, 0, 0, 0.2);
-}
 
 /* === TRAY === */
 #tray > .passive {
@@ -305,5 +152,25 @@ window#waybar.chromium {
 /* === ACCESSIBILITY === */
 label:focus {
     background-color: #000000;
+}
+
+/* Fixing assymetries idk */
+#pulseaudio {
+    min-width: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#clock {
+    padding-left: 6px;
+}
+
+
+/* animations */
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: #000000;
+    }
 }
 

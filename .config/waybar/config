@@ -7,7 +7,7 @@
     // Choose the order of the modules
     "modules-left": ["sway/workspaces", "hyprland/workspaces", "sway/mode"],
     "modules-center": ["sway/window", "hyprland/window"],
-    "modules-right": ["tray", "pulseaudio", "network", "battery", "clock"],
+    "modules-right": ["tray", "pulseaudio", "battery", "hyprland/language","clock"],
     // Modules configuration
     // "sway/workspaces": {
     //     "disable-scroll": true,
@@ -36,29 +36,27 @@
     },
     "tray": {
         //"icon-size": 21,
-        "spacing": 2
+        "spacing": 1
+
     },
     "clock": {
-        "format": "{:%I:%M %d-%m-%y}",
-        "format-alt": "{:%Y-%m-%d}"      
+        "format": "{:%a %H:%M}"
     },
+
     "battery": {
         "states": {
             "good": 95,
             "warning": 30,
             "critical": 15
         },
-        "format": "B: {capacity}% ",
-        "format-charging": "B: {capacity}%",
-        "format-plugged": "B: {capacity}%",
-        "format-alt": "{time} ",
+        "format": "{capacity}% {icon}",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
-        // "format-icons": ["", "", "", "", ""]
+        "format-icons": ["", "", "", "", ""]
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "{essid} ({signalStrength}%)   <span font='FontAwesome' style='normal'></span>",
+        "format-wifi": "{essid} ({signalStrength}%) ",
         "format-ethernet": "{ifname}: {ipaddr}/{cidr} ",
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Disconnected ",
@@ -67,11 +65,18 @@
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
         "format": "{volume}% {format_source}",
-        "format-bluetooth": "{volume}% <span font='FontAwesome' style='normal'></span>{format_source}",
-        "format-bluetooth-muted": "<span font='FontAwesome' style='normal'> </span>{format_source}",
-        "format-muted": " <span font='FontAwesome' style='normal'> </span>{format_source}",
-        "format-source": "<span font='FontAwesome' style='normal'></span>",
-        "format-source-muted": "<span font='FontAwesome' style='normal'></span>",
+        "format-bluetooth": "{volume}% ",
+        "format-bluetooth-muted": " {format_source}",
+        "format-muted": " {format_source}",
+        "format-source": "",
+        "format-source-muted": "",
         "on-click": "pavucontrol-qt"
+    },
+
+    "hyprland/language": {
+	"format": "{} 󰌌 ",
+	"on-click": "hyprctl switchxkblayout at-translated-set-2-keyboard next",
+	"format-en": "US",
+    	"format-en-colemak": "CMK"
     },
 }
