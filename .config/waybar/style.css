@@ -2,7 +2,7 @@
 @define-color base_white #ffffff;
 @define-color base_black #000000;
 @define-color accent_gray rgba(255, 255, 255, 0.3);
-@define-color hover_bg rgba(0, 0, 0, 0.2);
+@define-color hover_bg rgba(255, 255, 255, 1);
 
 /* States */
 @define-color status_ok #99ff99;
@@ -31,9 +31,6 @@ window#waybar {
 window#waybar.hidden {
     opacity: 0.2;
 }
-
-window#waybar.termite { background-color: #3F3F3F; }
-window#waybar.chromium { background-color: @base_black; border: none; }
 
 /* === MODULE WINDOW TITLE === */
 #window {
