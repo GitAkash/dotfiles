@@ -30,3 +30,19 @@ source "$HOME/.config/zsh/03-startup.zsh"     # Startup-related configurations
 source "$HOME/.config/zsh/99-aliases.zsh"     # Aliases (always last)
 source "$HOME/.config/zsh/99-motd.zsh"        # MOTD in terminal
 
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/akash/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/akash/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/akash/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/akash/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+

@@ -70,13 +70,14 @@
         "format-muted": " {format_source}",
         "format-source": "",
         "format-source-muted": "",
-        "on-click": "pavucontrol-qt"
+        "on-click": "pavucontrol-qt",
+        "on-click-right": "playerctl next"
     },
 
     "hyprland/language": {
-	"format": "{} 󰌌",
-	"on-click": "hyprctl switchxkblayout at-translated-set-2-keyboard next",
-	"format-en": "US",
-    	"format-en-colemak": "CMK"
+	    "format": "{} 󰌌",
+	    "on-click": "hyprctl switchxkblayout at-translated-set-2-keyboard next",
+	    "format-en": "US",
+        "format-en-colemak": "CMK"
     },
 }

@@ -89,10 +89,10 @@ TreeView Font=Sans Serif,9,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 Update Type=0
 
 [AlbumFolderView Sidebar]
-CurrentIndex=79
+CurrentIndex=97
 Expansion=0,1,9,10,11,13,16,19,23,26,29,33,37,40,44,4,5,6,7,50,53,58,61,56,64,67,70,73,74,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,-2
 RestoreChecked=false
-Selection=79
+Selection=97
 SortColumn=0
 SortOrder=0
 
@@ -1002,7 +1002,7 @@ tagPaths=1
 
 [Database Settings]
 Database Connectoptions=
-Database Encrypted Password=AwJJSUk=
+Database Encrypted Password=AwJgYGA=
 Database Hostname=
 Database Name=/home/akash/Pictures/Digikam/
 Database Name Face=/home/akash/Pictures/Digikam/
@@ -1950,9 +1950,9 @@ Version Properties Tab=versions
 Version Properties View Mode=2
 
 [MainWindow]
-InitialAlbumID=79
-SplitterState=AAAA/wAAAAEAAAADAAACVwAABaAAAAGIAf////8AAAAAAQE=
-ThumbbarState=AAAA/wAAAAD9AAAAAQAAAAIAAAM/AAAAjvwBAAAAAfsAAAAmAG0AYQBpAG4AdwBpAG4AZABvAHcAXwB0AGgAdQBtAGIAYgBhAHIAAAAAAAAAAz8AAABuAP///wAAAz8AAAOnAAAABAAAAAQAAAAIAAAACPwAAAAA
+InitialAlbumID=97
+SplitterState=AAAA/wAAAAEAAAADAAAB1AAAA8IAAAGIAf////8AAAAAAQE=
+ThumbbarState=AAAA/wAAAAD9AAAAAQAAAAIAAAPCAAAAjvwBAAAAAfsAAAAmAG0AYQBpAG4AdwBpAG4AZABvAHcAXwB0AGgAdQBtAGIAYgBhAHIAAAAAAAAAA8IAAABuAP///wAAA8IAAAOpAAAABAAAAAQAAAAIAAAACPwAAAAA
 
 [MaintenanceDlg Settings]
 1920x1200 screen: Window-Maximized=true
